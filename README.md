@@ -15,4 +15,5 @@ The workshop will be an hour long and will be geared towards beginners.
  A somewhat complete version of Gem Mayhem can be found in the "completed" branch of this repository. Here are some extension ideas in case we finish early: 
  
  1) Add a walking animation to the character prefab. Learn how to use Animation Controllers and think through transition logic.
- 2) Add a gem counter. Build upon scripting and UI skills.
+ 2) Add a gem counter.  Build upon scripting and UI skills.
+ 3) Add an end scene for collecting gems or for falling off.  Build upon scripting and UI skills.
