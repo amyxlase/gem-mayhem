@@ -3,6 +3,11 @@
 using UnityEngine.InputSystem;
 #endif
 
+// This file maps input to character and camera movement.
+// It looks scary! But do not worry.
+// If the camera rotation is too fast or too slow for your mouse,
+// feel free to mess with the Sens variable.
+
 namespace StarterAssets
 {
 	[RequireComponent(typeof(CharacterController))]
@@ -11,6 +16,9 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
+
+		// Listing class variables and making them available in the editor.
+
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
@@ -131,6 +139,8 @@ namespace StarterAssets
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 		}
 
+		// Map mouse movement to left & right camera rotation
+		// Clamp up & down rotation so players don't look into their own spines
 		private void CameraRotation()
 		{
 			// if there is an input
@@ -200,6 +210,7 @@ namespace StarterAssets
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
 
+		// Don't want to go flying if users spam jump
 		private void JumpAndGravity()
 		{
 			if (Grounded)
