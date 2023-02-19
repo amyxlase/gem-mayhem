@@ -17,3 +17,8 @@ The workshop will be an hour long and will be geared towards beginners.
  1) Add a walking animation to the character prefab. Learn how to use Animation Controllers and think through transition logic.
  2) Add a gem counter.  Build upon scripting and UI skills.
  3) Add an end scene for collecting gems or for falling off.  Build upon scripting and UI skills.
+ 
+ # Credits 
+ 
+ [Gem Asset Pack](https://assetstore.unity.com/packages/3d/props/simple-gems-ultimate-animated-customizable-pack-73764) \
+ [Starter Assets](https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525)
