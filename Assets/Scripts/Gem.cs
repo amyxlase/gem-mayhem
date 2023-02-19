@@ -11,10 +11,15 @@ public class Gem : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
-	// Let's rotate the trasform of each gem here using the rotation 
-	// angle, rotation speed, and the delta time between updates !
+	// Update is called once per rendered frame
 	void Update () {
         
+	}
+
+	// FixedUpdate is called once per physics frame
+	// Let's rotate the transform of each gem here using the rotation 
+	// angle, rotation speed, and the delta time between updates !
+	void FixedUpdate () {
+		transform.Rotate(rotationAngle * rotationSpeed * Time.deltaTime);
 	}
 }
