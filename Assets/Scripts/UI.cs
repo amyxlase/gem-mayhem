@@ -19,7 +19,6 @@ public class UI : MonoBehaviour
     }
 
     public void enterGame() {
-        Cursor.lockState = CursorLockMode.Locked;
-        SceneManager.LoadScene(1);
+       
     }
 }
